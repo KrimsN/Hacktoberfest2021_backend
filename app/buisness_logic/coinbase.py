@@ -6,7 +6,7 @@ from app.buisness_logic.base_exchange import AbstractBaseExchange
 
 class Coinbase(AbstractBaseExchange):
     _api_base: str = "https://api.exchange.coinbase.com"
-    _platform_name: str = "Coinbase"
+    platform_name = "Coinbase"
 
     @classmethod
     @lru_cache

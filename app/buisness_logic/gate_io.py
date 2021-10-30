@@ -6,7 +6,7 @@ from app.buisness_logic.base_exchange import AbstractBaseExchange
 
 class GateIo(AbstractBaseExchange):
     _api_base = "https://api.gateio.ws"
-    _platform_name: str = "gate.io"
+    platform_name = "gate.io"
 
     @classmethod
     @lru_cache

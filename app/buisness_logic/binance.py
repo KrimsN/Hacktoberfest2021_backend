@@ -6,7 +6,7 @@ from app.buisness_logic.base_exchange import AbstractBaseExchange
 
 class Binance(AbstractBaseExchange):
     _api_base: str = "https://api.binance.com"
-    _platform_name: str = "Binance"
+    platform_name = "Binance"
 
     @classmethod
     @lru_cache

@@ -6,7 +6,7 @@ from app.buisness_logic.base_exchange import AbstractBaseExchange
 
 class KuCoin(AbstractBaseExchange):
     _api_base: str = "https://openapi-sandbox.kucoin.com"
-    _platform_name: str = "KuCoin"
+    platform_name = "KuCoin"
 
     @classmethod
     @lru_cache

@@ -30,27 +30,27 @@ async def get_aggregated_current_price(symbol: str):
     if symbol_aliases['binance'] is not None:
         binance_avg = Binance.get_avg_price(symbol_aliases['binance'])
     else:
-        binance_avg = None
+        binance_avg = {"platform": Binance.platform_name, 'price': None}
         
     if symbol_aliases['coinbase'] is not None:
         coinbase_avg = Coinbase.get_avg_price(symbol_aliases['coinbase'])
     else:
-        coinbase_avg = None
+        coinbase_avg = {"platform": Coinbase.platform_name, 'price': None}
         
     if symbol_aliases['kucoin'] is not None:
         kucoin_avg = KuCoin.get_avg_price(symbol_aliases['kucoin'])
     else:
-        kucoin_avg = None
+        kucoin_avg = {"platform": KuCoin.platform_name, 'price': None}
         
     if symbol_aliases['gateio'] is not None:
         gateio_avg = GateIo.get_avg_price(symbol_aliases['gateio'])
     else:
-        gateio_avg = None
+        gateio_avg = {"platform": GateIo.platform_name, 'price': None}
         
     if symbol_aliases['dydx'] is not None:
         dydx_avg = Dydx.get_avg_price(symbol_aliases['dydx'])
     else:
-        dydx_avg = None
+        dydx_avg = {"platform": Dydx.platform_name, 'price': None}
 
     res = {
         "symbol": symbol,

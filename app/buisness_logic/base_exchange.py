@@ -13,7 +13,7 @@ class AbstractBaseExchange(ABC):
     @classmethod
     @property
     @abstractmethod
-    def _platform_name(cls) -> str:
+    def platform_name(cls) -> str:
         raise NotImplementedError()
 
     @classmethod
@@ -24,7 +24,7 @@ class AbstractBaseExchange(ABC):
     @classmethod
     def _add_meta_info(cls, d: dict, symbol: str) -> dict:
         d['symbol'] = symbol
-        d['platform'] = cls._platform_name
+        d['platform'] = cls.platform_name
         d['timestamp_UTC+7'] = time.time()
         return d
 

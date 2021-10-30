@@ -6,7 +6,7 @@ from app.buisness_logic.base_exchange import AbstractBaseExchange
 
 class Dydx(AbstractBaseExchange):
     _api_base: str = "https://api.dydx.exchange"
-    _platform_name: str = "dYdX"
+    platform_name = "dYdX"
 
     @classmethod
     @lru_cache
