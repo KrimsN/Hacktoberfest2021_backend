@@ -1,18 +1,12 @@
 import requests
-import time
 from functools import lru_cache
 
+from app.buisness_logic.base_exchange import AbstractBaseExchange
 
-class Binance:
+
+class Binance(AbstractBaseExchange):
     _api_base: str = "https://api.binance.com"
-    _headers: dict[str, str] = {"Accept": "application/json"}
-
-    @staticmethod
-    def _add_meta_info(d: dict, symbol: str) -> dict:
-        d['symbol'] = symbol
-        d['platform'] = "binance"
-        d['timestamp_UTC+7'] = time.time()
-        return d
+    _platform_name: str = "Binance"
 
     @classmethod
     @lru_cache

@@ -1,18 +1,12 @@
 import requests
-import time
 from functools import lru_cache
 
+from app.buisness_logic.base_exchange import AbstractBaseExchange
 
-class Coinbase:
+
+class Coinbase(AbstractBaseExchange):
     _api_base: str = "https://api.exchange.coinbase.com"
-    _headers: dict[str, str] = {"Accept": "application/json"}
-
-    @staticmethod
-    def _add_meta_info(d: dict, symbol: str) -> dict:
-        d['symbol'] = symbol
-        d['platform'] = "Coinbase"
-        d['timestamp_UTC+7'] = time.time()
-        return d
+    _platform_name: str = "Coinbase"
 
     @classmethod
     @lru_cache
@@ -33,7 +27,7 @@ class Coinbase:
         path: str = f"/products/{symbol}/book?level=1"
         resp = requests.get(f"{cls._api_base}{path}", headers=cls._headers, allow_redirects=True).json()
         res = {
-            "price": (resp['bids'][0][0] + resp['asks'][0][0] / 2)
+            "price": (float(resp['bids'][0][0]) + float(resp['asks'][0][0])) / 2
         }
         res = cls._add_meta_info(res, symbol)
         return res

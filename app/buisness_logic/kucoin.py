@@ -1,18 +1,12 @@
 import requests
-import time
 from functools import lru_cache
 
+from app.buisness_logic.base_exchange import AbstractBaseExchange
 
-class KuCoin:
+
+class KuCoin(AbstractBaseExchange):
     _api_base: str = "https://openapi-sandbox.kucoin.com"
-    _headers: dict[str, str] = {"Accept": "application/json"}
-
-    @staticmethod
-    def _add_meta_info(d: dict, symbol: str) -> dict:
-        d['symbol'] = symbol
-        d['platform'] = "KuCoin"
-        d['timestamp_UTC+7'] = time.time()
-        return d
+    _platform_name: str = "KuCoin"
 
     @classmethod
     @lru_cache
