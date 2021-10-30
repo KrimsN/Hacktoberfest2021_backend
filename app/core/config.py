@@ -1,6 +1,7 @@
 import typing as t
 import logging
 import sys
+import json
 from loguru import logger
 from pathlib import Path
 from starlette.config import Config
@@ -8,7 +9,7 @@ from starlette.datastructures import CommaSeparatedStrings, Secret
 
 from app.core.logging import InterceptHandler
 
-VERSION = "0.0.1"
+VERSION = "1.33.7"
 
 
 config = Config(".env")  # config file
@@ -28,6 +29,8 @@ ALLOWED_HOSTS: t.List[str] = config(
     default=["*"],
 )
 
+with open('symbol_list.json', 'r', encoding='utf8') as j:
+    SYMBOL_TABLE = json.load(j)
 
 # logging configuration
 

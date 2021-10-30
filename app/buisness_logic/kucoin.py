@@ -21,7 +21,7 @@ class KuCoin(AbstractBaseExchange):
         path: str = "/api/v1/market/stats"
         query: str = f"?symbol={symbol}"
         resp = requests.get(f"{cls._api_base}{path}{query}", headers=cls._headers, allow_redirects=True).json()
-        res = {"price": resp["averagePrice"]}
+        res = {"price": resp['data']["averagePrice"]}
         res = cls._add_meta_info(res, symbol)
         return res
 
