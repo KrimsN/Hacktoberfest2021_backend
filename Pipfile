@@ -8,6 +8,7 @@ uvicorn = "*"
 fastapi = "*"
 loguru = "*"
 pydantic = "*"
+requests = "*"
 
 [dev-packages]
 
