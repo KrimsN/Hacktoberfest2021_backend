@@ -30,7 +30,7 @@ async def get_aggregated_current_price(symbol: str):
     if symbol_aliases['binance'] is not None:
         binance_avg = Binance.get_avg_price(symbol_aliases['binance'])
     else:
-        binance_avg = None# TODO: implement
+        binance_avg = None
         
     if symbol_aliases['coinbase'] is not None:
         coinbase_avg = Coinbase.get_avg_price(symbol_aliases['coinbase'])
@@ -55,11 +55,11 @@ async def get_aggregated_current_price(symbol: str):
     res = {
         "symbol": symbol,
         "data": [
-            {'Binance': binance_avg},
-            {'CoinBase': coinbase_avg},
-            {'KuCoin': kucoin_avg},
-            {'Gate.io': gateio_avg},
-            {'dYdX': dydx_avg},
+            binance_avg,
+            coinbase_avg,
+            kucoin_avg,
+            gateio_avg,
+            dydx_avg,
         ]
     }
     return res
