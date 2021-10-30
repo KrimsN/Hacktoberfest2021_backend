@@ -1,5 +1,6 @@
 import requests
 import time
+from functools import lru_cache
 
 
 class Binance:
@@ -14,9 +15,17 @@ class Binance:
         return d
 
     @classmethod
+    @lru_cache
+    def get_all_trade_pairs_ids(cls):
+        path = "/api/v3/ticker/price"
+        resp = requests.get(f"{cls._api_base}{path}", headers=cls._headers, allow_redirects=True).json()
+        result = sorted([i['symbol'] for i in resp])
+        return result
+
+    @classmethod
     def get_avg_price(cls, symbol: str) -> dict:
         path: str = "/api/v3/avgPrice"
-        query: str = f"?symbol={symbol}USDT"
+        query: str = f"?symbol={symbol}"
         res = requests.get(f"{cls._api_base}{path}{query}", allow_redirects=True, headers=cls._headers)
         res_j: dict = res.json()
         res_j = cls._add_meta_info(res_j, symbol)
@@ -25,7 +34,7 @@ class Binance:
     @classmethod
     def get_depth(cls, symbol: str) -> dict:
         path: str = "/api/v3/depth"
-        query: str = f"?symbol={symbol}USDT"
+        query: str = f"?symbol={symbol}"
         res = requests.get(f"{cls._api_base}{path}{query}", allow_redirects=True, headers=cls._headers)
         res_j: dict = res.json()
 
@@ -44,3 +53,5 @@ class Binance:
 
         res_depth = cls._add_meta_info(res_depth, symbol)
         return res_depth
+
+
