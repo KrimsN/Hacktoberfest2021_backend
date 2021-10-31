@@ -76,7 +76,7 @@
         "gateio": "DOT_USDT",
         "dydx": null
     },
-    "ETH-USD": {
+    "ETH-USDT": {
         "binance": "ETHUSDT",
         "coinbase": "ETH-USDT",
         "kucoin": "ETH-USDT",

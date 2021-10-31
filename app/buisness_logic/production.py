@@ -4,6 +4,7 @@ from loguru import logger
 from app.buisness_logic.binance import Binance
 from app.buisness_logic.coinbase import Coinbase
 from app.buisness_logic.dydx import Dydx
+from app.buisness_logic.ftx import Ftx
 from app.buisness_logic.gate_io import GateIo
 from app.buisness_logic.kucoin import KuCoin
 
@@ -22,30 +23,35 @@ def info_about_accessable_symbols():
 def aggregate_current_price(symbol: str):
     symbol_aliases = SYMBOL_TABLE[symbol]
 
-    if symbol_aliases['binance'] is not None:
+    if symbol_aliases.get('binance') is not None:
         binance_avg = Binance.get_avg_price(symbol_aliases['binance'])
     else:
         binance_avg = {"platform": Binance.platform_name, 'price': None, "symbol": None}
 
-    if symbol_aliases['coinbase'] is not None:
+    if symbol_aliases.get('coinbase') is not None:
         coinbase_avg = Coinbase.get_avg_price(symbol_aliases['coinbase'])
     else:
         coinbase_avg = {"platform": Coinbase.platform_name, 'price': None, "symbol": None}
 
-    if symbol_aliases['kucoin'] is not None:
+    if symbol_aliases.get('kucoin') is not None:
         kucoin_avg = KuCoin.get_avg_price(symbol_aliases['kucoin'])
     else:
         kucoin_avg = {"platform": KuCoin.platform_name, 'price': None, "symbol": None}
 
-    if symbol_aliases['gateio'] is not None:
+    if symbol_aliases.get('gateio') is not None:
         gateio_avg = GateIo.get_avg_price(symbol_aliases['gateio'])
     else:
         gateio_avg = {"platform": GateIo.platform_name, 'price': None, "symbol": None}
 
-    if symbol_aliases['dydx'] is not None:
+    if symbol_aliases.get('dydx') is not None:
         dydx_avg = Dydx.get_avg_price(symbol_aliases['dydx'])
     else:
         dydx_avg = {"platform": Dydx.platform_name, 'price': None, "symbol": None}
+
+    if symbol_aliases.get('ftx') is not None:
+        ftx_avg = Ftx.get_avg_price(symbol_aliases['ftx'])
+    else:
+        ftx_avg = {"platform": Ftx.platform_name, 'price': None, "symbol": None}
 
     res = {
         "symbol": symbol,
@@ -55,6 +61,7 @@ def aggregate_current_price(symbol: str):
             kucoin_avg,
             gateio_avg,
             dydx_avg,
+            ftx_avg
         ]
     }
     return res
@@ -68,7 +75,7 @@ def aggregate_bids_asks(symbol):
 
     res = {"bids": [], "asks": []}
 
-    if symbol_aliases['binance'] is not None:
+    if symbol_aliases.get('binance') is not None:
         try:
             binance = Binance.get_depth(symbol_aliases['binance'])
             res['bids'].extend(binance['bids'])
@@ -77,7 +84,7 @@ def aggregate_bids_asks(symbol):
             logger.error("binance error")
             logger.error(e)
 
-    if symbol_aliases['coinbase'] is not None:
+    if symbol_aliases.get('coinbase') is not None:
         try:
             coinbase = Coinbase.get_depth(symbol_aliases['coinbase'])
             res['bids'].extend(coinbase['bids'])
@@ -86,7 +93,7 @@ def aggregate_bids_asks(symbol):
             logger.error("coinbase error")
             logger.error(e)
 
-    if symbol_aliases['dydx'] is not None:
+    if symbol_aliases.get('dydx') is not None:
         try:
             dydx = Dydx.get_depth(symbol_aliases['dydx'])
             res['bids'].extend(dydx['bids'])
@@ -95,7 +102,7 @@ def aggregate_bids_asks(symbol):
             logger.error("dydx error")
             logger.error(e)
 
-    if symbol_aliases['gateio'] is not None:
+    if symbol_aliases.get('gateio') is not None:
         try:
             gateio = GateIo.get_depth(symbol_aliases['gateio'])
             res['bids'].extend(gateio['bids'])
@@ -104,13 +111,22 @@ def aggregate_bids_asks(symbol):
             logger.error("gateio error")
             logger.error(e)
 
-    if symbol_aliases['kucoin'] is not None:
+    if symbol_aliases.get('kucoin') is not None:
         try:
             kucoin = KuCoin.get_depth(symbol_aliases['kucoin'])
             res['bids'].extend(kucoin['bids'])
             res['asks'].extend(kucoin['asks'])
         except Exception as e:
             logger.error("kucoin error")
+            logger.error(e)
+
+    if symbol_aliases.get('ftx') is not None:
+        try:
+            ftx = Ftx.get_depth(symbol_aliases['ftx'])
+            res['bids'].extend(ftx['bids'])
+            res['asks'].extend(ftx['asks'])
+        except Exception as e:
+            logger.error("ftx error")
             logger.error(e)
 
     res['bids'].sort(key=lambda x: float(x['price']), reverse=True)
