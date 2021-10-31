@@ -4,1266 +4,1455 @@
         "coinbase": "BTC-USDT",
         "kucoin": "BTC-USDT",
         "gateio": "BTC_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": "BTC/USDT"
     },
     "ARPA-USDT": {
         "binance": null,
         "coinbase": "ARPA-USDT",
         "kucoin": null,
         "gateio": "ARPA_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ASM-USDT": {
         "binance": null,
         "coinbase": "ASM-USDT",
         "kucoin": null,
         "gateio": "ASM_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "AUCTION-USDT": {
         "binance": "AUCTIONUSDT",
         "coinbase": "AUCTION-USDT",
         "kucoin": null,
         "gateio": "AUCTION_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "AXS-USDT": {
         "binance": "AXSUSDT",
         "coinbase": "AXS-USDT",
         "kucoin": null,
         "gateio": "AXS_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BADGER-USDT": {
         "binance": "BADGERUSDT",
         "coinbase": "BADGER-USDT",
         "kucoin": null,
         "gateio": "BADGER_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BTRST-USDT": {
         "binance": null,
         "coinbase": "BTRST-USDT",
         "kucoin": null,
         "gateio": "BTRST_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "CHZ-USDT": {
         "binance": "CHZUSDT",
         "coinbase": "CHZ-USDT",
         "kucoin": null,
         "gateio": "CHZ_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": "CHZ/USDT"
     },
     "CLV-USDT": {
         "binance": "CLVUSDT",
         "coinbase": "CLV-USDT",
         "kucoin": null,
         "gateio": "CLV_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "DDX-USDT": {
         "binance": null,
         "coinbase": "DDX-USDT",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "DOT-USDT": {
         "binance": "DOTUSDT",
         "coinbase": "DOT-USDT",
         "kucoin": null,
         "gateio": "DOT_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ETH-USDT": {
         "binance": "ETHUSDT",
         "coinbase": "ETH-USDT",
         "kucoin": "ETH-USDT",
         "gateio": "ETH_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": "ETH/USDT"
     },
     "FET-USDT": {
         "binance": "FETUSDT",
         "coinbase": "FET-USDT",
         "kucoin": null,
         "gateio": "FET_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ICP-USDT": {
         "binance": "ICPUSDT",
         "coinbase": "ICP-USDT",
         "kucoin": null,
         "gateio": "ICP_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "IOTX-USDT": {
         "binance": "IOTXUSDT",
         "coinbase": "IOTX-USDT",
         "kucoin": null,
         "gateio": "IOTX_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "KRL-USDT": {
         "binance": null,
         "coinbase": "KRL-USDT",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "LCX-USDT": {
         "binance": null,
         "coinbase": "LCX-USDT",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "MASK-USDT": {
         "binance": "MASKUSDT",
         "coinbase": "MASK-USDT",
         "kucoin": null,
         "gateio": "MASK_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ORN-USDT": {
         "binance": "ORNUSDT",
         "coinbase": "ORN-USDT",
         "kucoin": null,
         "gateio": "ORN_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "PAX-USDT": {
         "binance": "PAXUSDT",
         "coinbase": "PAX-USDT",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "PERP-USDT": {
         "binance": "PERPUSDT",
         "coinbase": "PERP-USDT",
         "kucoin": null,
         "gateio": "PERP_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "POLY-USDT": {
         "binance": "POLYUSDT",
         "coinbase": "POLY-USDT",
         "kucoin": null,
         "gateio": "POLY_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "RAD-USDT": {
         "binance": "RADUSDT",
         "coinbase": "RAD-USDT",
         "kucoin": null,
         "gateio": "RAD_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "REQ-USDT": {
         "binance": "REQUSDT",
         "coinbase": "REQ-USDT",
         "kucoin": null,
         "gateio": "REQ_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "SHIB-USDT": {
         "binance": "SHIBUSDT",
         "coinbase": "SHIB-USDT",
         "kucoin": null,
         "gateio": "SHIB_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "SOL-USDT": {
         "binance": "SOLUSDT",
         "coinbase": "SOL-USDT",
         "kucoin": null,
         "gateio": "SOL_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": "SOL/USDT"
     },
     "SUKU-USDT": {
         "binance": null,
         "coinbase": "SUKU-USDT",
         "kucoin": null,
         "gateio": "SUKU_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "TRAC-USDT": {
         "binance": null,
         "coinbase": "TRAC-USDT",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "TRU-USDT": {
         "binance": "TRUUSDT",
         "coinbase": "TRU-USDT",
         "kucoin": null,
         "gateio": "TRU_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": "TRU/USDT"
     },
     "WCFG-USDT": {
         "binance": null,
         "coinbase": "WCFG-USDT",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "WLUNA-USDT": {
         "binance": null,
         "coinbase": "WLUNA-USDT",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "XYO-USDT": {
         "binance": null,
         "coinbase": "XYO-USDT",
         "kucoin": null,
         "gateio": "XYO_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ZEN-USDT": {
         "binance": "ZENUSDT",
         "coinbase": "ZEN-USDT",
         "kucoin": null,
         "gateio": "ZEN_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "AGLD-USDT": {
         "binance": null,
         "coinbase": "AGLD-USDT",
         "kucoin": null,
         "gateio": "AGLD_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "AVAX-USDT": {
         "binance": null,
         "coinbase": "AVAX-USDT",
         "kucoin": null,
         "gateio": "AVAX_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "DOGE-USDT": {
         "binance": null,
         "coinbase": "DOGE-USDT",
         "kucoin": null,
         "gateio": "DOGE_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": "DOGE/USDT"
     },
     "RLY-USDT": {
         "binance": null,
         "coinbase": "RLY-USDT",
         "kucoin": null,
         "gateio": "RLY_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "UST-USDT": {
         "binance": null,
         "coinbase": "UST-USDT",
         "kucoin": null,
         "gateio": "UST_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BTC3L-USDT": {
         "binance": null,
         "coinbase": null,
         "kucoin": "BTC3L-USDT",
         "gateio": "BTC3L_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BTC3S-USDT": {
         "binance": null,
         "coinbase": null,
         "kucoin": "BTC3S-USDT",
         "gateio": "BTC3S_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ETH3L-USDT": {
         "binance": null,
         "coinbase": null,
         "kucoin": "ETH3L-USDT",
         "gateio": "ETH3L_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ETH3S-USDT": {
         "binance": null,
         "coinbase": null,
         "kucoin": "ETH3S-USDT",
         "gateio": "ETH3S_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "KCS-USDT": {
         "binance": null,
         "coinbase": null,
         "kucoin": "KCS-USDT",
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "LUNA3L-USDT": {
         "binance": null,
         "coinbase": null,
         "kucoin": "LUNA3L-USDT",
         "gateio": "LUNA3L_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "LUNA3S-USDT": {
         "binance": null,
         "coinbase": null,
         "kucoin": "LUNA3S-USDT",
         "gateio": "LUNA3S_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "XRP-USDT": {
         "binance": null,
         "coinbase": null,
         "kucoin": "XRP-USDT",
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": "XRP/USDT"
     },
     "XRP3L-USDT": {
         "binance": null,
         "coinbase": null,
         "kucoin": "XRP3L-USDT",
         "gateio": "XRP3L_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "YFI3L-USDT": {
         "binance": null,
         "coinbase": null,
         "kucoin": "YFI3L-USDT",
         "gateio": "YFI3L_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "YFI3S-USDT": {
         "binance": null,
         "coinbase": null,
         "kucoin": "YFI3S-USDT",
         "gateio": "YFI3S_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "1INCHDOWN-USDT": {
         "binance": "1INCHDOWNUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "1INCHUP-USDT": {
         "binance": "1INCHUPUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "1INCH-USDT": {
         "binance": "1INCHUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "1INCH_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "AAVEDOWN-USDT": {
         "binance": "AAVEDOWNUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "AAVEUP-USDT": {
         "binance": "AAVEUPUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ACM-USDT": {
         "binance": "ACMUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ADADOWN-USDT": {
         "binance": "ADADOWNUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ADAUP-USDT": {
         "binance": "ADAUPUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ADA-USDT": {
         "binance": "ADAUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "ADA_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ADX-USDT": {
         "binance": "ADXUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "AKRO-USDT": {
         "binance": "AKROUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "AKRO_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": "AKRO/USDT"
     },
     "ALGO-USDT": {
         "binance": "ALGOUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "ALGO_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ALICE-USDT": {
         "binance": "ALICEUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "ALICE_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ALPACA-USDT": {
         "binance": "ALPACAUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "ALPACA_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ALPHA-USDT": {
         "binance": "ALPHAUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "ALPHA_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ANKR-USDT": {
         "binance": "ANKRUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "ANKR_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ANT-USDT": {
         "binance": "ANTUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "ANT_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "AR-USDT": {
         "binance": "ARUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "AR_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ASR-USDT": {
         "binance": "ASRUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ATA-USDT": {
         "binance": "ATAUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "ATA_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ATM-USDT": {
         "binance": "ATMUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ATOM-USDT": {
         "binance": "ATOMUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "ATOM_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "AUDIO-USDT": {
         "binance": "AUDIOUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "AUDIO_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": "AUDIO/USDT"
     },
     "AUTO-USDT": {
         "binance": "AUTOUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "AUTO_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "AVA-USDT": {
         "binance": "AVAUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "AVA_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BAKE-USDT": {
         "binance": "BAKEUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "BAKE_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BAL-USDT": {
         "binance": "BALUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "BAL_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": "BAL/USDT"
     },
     "BAND-USDT": {
         "binance": "BANDUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "BAND_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BAR-USDT": {
         "binance": "BARUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BCC-USDT": {
         "binance": "BCCUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BCHABC-USDT": {
         "binance": "BCHABCUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BCHDOWN-USDT": {
         "binance": "BCHDOWNUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BCHSV-USDT": {
         "binance": "BCHSVUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BCHUP-USDT": {
         "binance": "BCHUPUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BCH-USDT": {
         "binance": "BCHUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "BCH_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": "BCH/USDT"
     },
     "BEAM-USDT": {
         "binance": "BEAMUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "BEAM_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BEAR-USDT": {
         "binance": "BEARUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": "BEAR/USDT"
     },
     "BEL-USDT": {
         "binance": "BELUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "BEL_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BETA-USDT": {
         "binance": "BETAUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BKRW-USDT": {
         "binance": "BKRWUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BNBBEAR-USDT": {
         "binance": "BNBBEARUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": "BNBBEAR/USDT"
     },
     "BNBBULL-USDT": {
         "binance": "BNBBULLUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": "BNBBULL/USDT"
     },
     "BNBDOWN-USDT": {
         "binance": "BNBDOWNUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BNBUP-USDT": {
         "binance": "BNBUPUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BNB-USDT": {
         "binance": "BNBUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "BNB_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": "BNB/USDT"
     },
     "BNT-USDT": {
         "binance": "BNTUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BOND-USDT": {
         "binance": "BONDUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "BOND_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BTCDOWN-USDT": {
         "binance": "BTCDOWNUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BTCST-USDT": {
         "binance": "BTCSTUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "BTCST_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BTCUP-USDT": {
         "binance": "BTCUPUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BTG-USDT": {
         "binance": "BTGUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "BTG_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BTS-USDT": {
         "binance": "BTSUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "BTS_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BTT-USDT": {
         "binance": "BTTUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "BTT_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BURGER-USDT": {
         "binance": "BURGERUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BUSD-USDT": {
         "binance": "BUSDUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "C98-USDT": {
         "binance": "C98USDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "C98_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "CAKE-USDT": {
         "binance": "CAKEUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "CAKE_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "CELO-USDT": {
         "binance": "CELOUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "CELO_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "CELR-USDT": {
         "binance": "CELRUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "CELR_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "CFX-USDT": {
         "binance": "CFXUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "CFX_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ZRX-BTC": {
         "binance": "ZRXBTC",
         "coinbase": "ZRX-BTC",
         "kucoin": null,
         "gateio": "ZRX_BTC",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ZRX-EUR": {
         "binance": null,
         "coinbase": "ZRX-EUR",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ZRX-USD": {
         "binance": null,
         "coinbase": "ZRX-USD",
         "kucoin": null,
         "gateio": "ZRX_USD",
-        "dydx": null
+        "dydx": null,
+        "ftx": "ZRX/USD"
     },
     "ZRX-USDT": {
         "binance": "ZRXUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "ZRX_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ZRX-BNB": {
         "binance": "ZRXBNB",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ZRX-BUSD": {
         "binance": "ZRXBUSD",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "ZRX-ETH": {
         "binance": "ZRXETH",
         "coinbase": null,
         "kucoin": null,
         "gateio": "ZRX_ETH",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BZRX-BNB": {
         "binance": "BZRXBNB",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BZRX-BTC": {
         "binance": "BZRXBTC",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BZRX-BUSD": {
         "binance": "BZRXBUSD",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BZRX-USDT": {
         "binance": "BZRXUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "BZRX_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BAT-BNB": {
         "binance": "BATBNB",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BAT-BTC": {
         "binance": "BATBTC",
         "coinbase": "BAT-BTC",
         "kucoin": null,
         "gateio": "BAT_BTC",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BAT-BUSD": {
         "binance": "BATBUSD",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BAT-ETH": {
         "binance": "BATETH",
         "coinbase": "BAT-ETH",
         "kucoin": null,
         "gateio": "BAT_ETH",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BAT-PAX": {
         "binance": "BATPAX",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BAT-TUSD": {
         "binance": "BATTUSD",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BAT-USDC": {
         "binance": "BATUSDC",
         "coinbase": "BAT-USDC",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BAT-USDT": {
         "binance": "BATUSDT",
         "coinbase": null,
         "kucoin": null,
-        "gateio": null,
-        "dydx": null
+        "gateio": "BAT_USDT",
+        "dydx": null,
+        "ftx": null
     },
     "BAT-EUR": {
         "binance": null,
         "coinbase": "BAT-EUR",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "BAT-USD": {
         "binance": null,
         "coinbase": "BAT-USD",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": "BAT/USD"
     },
     "SUSHI-BIDR": {
         "binance": "SUSHIBIDR",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "SUSHI-BNB": {
         "binance": "SUSHIBNB",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "SUSHI-BTC": {
         "binance": "SUSHIBTC",
         "coinbase": "SUSHI-BTC",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": "SUSHI/BTC"
     },
     "SUSHI-BUSD": {
         "binance": "SUSHIBUSD",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "SUSHI-DOWNUSDT": {
         "binance": "SUSHIDOWNUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "SUSHI-UPUSDT": {
         "binance": "SUSHIUPUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "SUSHI-USDT": {
         "binance": "SUSHIUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "SUSHI_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": "SUSHI/USDT"
     },
     "SUSHI-ETH": {
         "binance": null,
         "coinbase": "SUSHI-ETH",
         "kucoin": null,
         "gateio": "SUSHI_ETH",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "SUSHI-EUR": {
         "binance": null,
         "coinbase": "SUSHI-EUR",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "SUSHI-GBR": {
         "binance": null,
         "coinbase": "SUSHI-GBR",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "SUSHI-USD": {
         "binance": null,
         "coinbase": "SUSHI-USD",
         "kucoin": null,
         "gateio": "SUSHI_USD",
-        "dydx": "SUSHI-USD"
+        "dydx": "SUSHI-USD",
+        "ftx": "SUSHI/USD"
     },
     "SUSHI3L-USDT": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": "SUSHI3L_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "SUSHI3S-USDT": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": "SUSHI3S_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "DYDX-BNB": {
         "binance": "DYDXBNB",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "DYDX-BTC": {
         "binance": "DYDXBTC",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "DYDX-BUSD": {
         "binance": "DYDXBUSD",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "DYDX-USDT": {
         "binance": "DYDXUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": "DYDX_USDT",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "DYDX-ETH": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": "DYDX_ETH",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "DYDX-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": "DYDX_USD",
-        "dydx": null
+        "dydx": null,
+        "ftx": "DYDX/USD"
     },
     "1INCH-BTC": {
         "binance": "1INCHBTC",
         "coinbase": "1INCH-BTC",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "1INCH-BUSD": {
         "binance": "1INCHBUSD",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "1INCH-DOWNUSDT": {
         "binance": "1INCHDOWNUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "1INCH-UPUSDT": {
         "binance": "1INCHUPUSDT",
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "1INCH-EUR": {
         "binance": null,
         "coinbase": "1INCH-EUR",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "1INCH-GBP": {
         "binance": null,
         "coinbase": "1INCH-GBP",
         "kucoin": null,
         "gateio": null,
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "1INCH-USD": {
         "binance": null,
         "coinbase": "1INCH-USD",
         "kucoin": null,
         "gateio": "1INCH_USD",
-        "dydx": "1INCH-USD"
+        "dydx": "1INCH-USD",
+        "ftx": "1INCH/USD"
     },
     "1INCH-ETH": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": "1INCH_ETH",
-        "dydx": null
+        "dydx": null,
+        "ftx": null
     },
     "AAVE-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "AAVE-USD"
+        "dydx": "AAVE-USD",
+        "ftx": "AAVE/USD"
     },
     "ADA-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "ADA-USD"
+        "dydx": "ADA-USD",
+        "ftx": null
     },
     "ALGO-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "ALGO-USD"
+        "dydx": "ALGO-USD",
+        "ftx": null
     },
     "ATOM-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "ATOM-USD"
+        "dydx": "ATOM-USD",
+        "ftx": null
     },
     "AVAX-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "AVAX-USD"
+        "dydx": "AVAX-USD",
+        "ftx": null
     },
     "BCH-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "BCH-USD"
+        "dydx": "BCH-USD",
+        "ftx": "BCH/USD"
     },
     "BTC-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "BTC-USD"
+        "dydx": "BTC-USD",
+        "ftx": null
     },
     "COMP-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "COMP-USD"
+        "dydx": "COMP-USD",
+        "ftx": "COMP/USD"
     },
     "CRV-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "CRV-USD"
+        "dydx": "CRV-USD",
+        "ftx": "CRV/USD"
     },
     "DOGE-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "DOGE-USD"
+        "dydx": "DOGE-USD",
+        "ftx": "DOGE/USD"
     },
     "DOT-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "DOT-USD"
+        "dydx": "DOT-USD",
+        "ftx": null
+    },
+    "EOS-USD": {
+        "binance": null,
+        "coinbase": null,
+        "kucoin": null,
+        "gateio": null,
+        "dydx": "EOS-USD",
+        "ftx": null
     },
     "ETH-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "ETH-USD"
+        "dydx": "ETH-USD",
+        "ftx": "ETH/USD"
     },
     "FIL-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "FIL-USD"
+        "dydx": "FIL-USD",
+        "ftx": null
     },
     "LINK-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "LINK-USD"
+        "dydx": "LINK-USD",
+        "ftx": "LINK/USD"
     },
     "LTC-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "LTC-USD"
+        "dydx": "LTC-USD",
+        "ftx": "LTC/USD"
     },
     "MATIC-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "MATIC-USD"
+        "dydx": "MATIC-USD",
+        "ftx": "MATIC/USD"
     },
     "MKR-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "MKR-USD"
+        "dydx": "MKR-USD",
+        "ftx": "MKR/USD"
     },
     "SNX-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "SNX-USD"
+        "dydx": "SNX-USD",
+        "ftx": "SNX/USD"
     },
     "SOL-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "SOL-USD"
+        "dydx": "SOL-USD",
+        "ftx": "SOL/USD"
     },
     "UMA-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "UMA-USD"
+        "dydx": "UMA-USD",
+        "ftx": null
     },
     "UNI-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "UNI-USD"
+        "dydx": "UNI-USD",
+        "ftx": "UNI/USD"
     },
     "XMR-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "XMR-USD"
+        "dydx": "XMR-USD",
+        "ftx": null
     },
     "YFI-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "YFI-USD"
+        "dydx": "YFI-USD",
+        "ftx": "YFI/USD"
     },
     "ZEC-USD": {
         "binance": null,
         "coinbase": null,
         "kucoin": null,
         "gateio": null,
-        "dydx": "ZEC-USD"
+        "dydx": "ZEC-USD",
+        "ftx": null
     }
 }
