@@ -202,7 +202,7 @@ def calculate_buy(symbol, total_amount):
             diff = sum['amount'] - total_amount
             sum['amount'] -= diff
             sum['price'] -= diff * price
-            sum['asks'][-1]['qty'] = decimal.Decimal(sum['bids'][-1]['qty']) - diff
+            sum['asks'][-1]['qty'] = decimal.Decimal(sum['asks'][-1]['qty']) - diff
 
             sum['completed'] = True
             break
