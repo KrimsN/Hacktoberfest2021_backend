@@ -1,6 +1,8 @@
 import requests
 from functools import lru_cache
 
+from cachetools.func import ttl_cache
+
 from app.buisness_logic.base_exchange import AbstractBaseExchange
 
 
@@ -17,6 +19,7 @@ class Binance(AbstractBaseExchange):
         return result
 
     @classmethod
+    @ttl_cache(ttl=60 * 5)
     def get_avg_price(cls, symbol: str) -> dict:
         path: str = "/api/v3/avgPrice"
         query: str = f"?symbol={symbol}"
@@ -26,6 +29,7 @@ class Binance(AbstractBaseExchange):
         return res_j
 
     @classmethod
+    @ttl_cache(ttl=60 * 5)
     def get_depth(cls, symbol: str) -> dict:
         path: str = "/api/v3/depth"
         query: str = f"?symbol={symbol}"
@@ -36,11 +40,13 @@ class Binance(AbstractBaseExchange):
 
         for bid in res_j["bids"]:
             res_depth["bids"].append({
+                "platform": "binance",
                 "price": bid[0],
                 "qty": bid[1]
             })
         for ask in res_j["asks"]:
             res_depth["asks"].append({
+                "platform": "binance",
                 "price": ask[0],
                 "qty": ask[1]
             })

@@ -8,6 +8,7 @@
 -i https://pypi.org/simple
 anyio==3.3.4; python_full_version >= '3.6.2'
 asgiref==3.4.1; python_version >= '3.6'
+cachetools==4.2.4
 certifi==2021.10.8
 charset-normalizer==2.0.7; python_version >= '3'
 click==8.0.3; python_version >= '3.6'

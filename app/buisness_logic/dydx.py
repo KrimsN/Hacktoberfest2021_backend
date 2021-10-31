@@ -1,6 +1,8 @@
 import requests
 from functools import lru_cache
 
+from cachetools.func import ttl_cache
+
 from app.buisness_logic.base_exchange import AbstractBaseExchange
 
 
@@ -17,6 +19,7 @@ class Dydx(AbstractBaseExchange):
         return result
 
     @classmethod
+    @ttl_cache(ttl=60 * 5)
     def get_avg_price(cls, symbol: str) -> dict:
         resp = cls.get_depth(symbol)
         # почему то цены спроса тут выше чем цены предлоэенией
@@ -32,6 +35,7 @@ class Dydx(AbstractBaseExchange):
         return res
 
     @classmethod
+    @ttl_cache(ttl=60 * 5)
     def get_depth(cls, symbol: str) -> dict:
         path: str = "/v3/orderbook"
         query: str = f"/{symbol}"
@@ -41,11 +45,13 @@ class Dydx(AbstractBaseExchange):
 
         for bid in resp["bids"]:
             res_depth["bids"].append({
+                "platform": "dydx",
                 "price": bid['price'],
                 "qty": bid['size']
             })
         for ask in resp["asks"]:
             res_depth["asks"].append({
+                "platform": "dydx",
                 "price": ask['price'],
                 "qty": ask['size']
             })

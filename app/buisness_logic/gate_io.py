@@ -1,6 +1,8 @@
 import requests
 from functools import lru_cache
 
+from cachetools.func import ttl_cache
+
 from app.buisness_logic.base_exchange import AbstractBaseExchange
 
 
@@ -17,6 +19,7 @@ class GateIo(AbstractBaseExchange):
         return result
 
     @classmethod
+    @ttl_cache(ttl=60 * 5)
     def get_avg_price(cls, symbol: str) -> dict:
         resp = cls.get_depth(symbol)
         lowest_bid = sorted(resp['bids'], key=lambda x: float(x['price']))[0]
@@ -28,6 +31,7 @@ class GateIo(AbstractBaseExchange):
         return res
 
     @classmethod
+    @ttl_cache(ttl=60 * 5)
     def get_depth(cls, symbol: str) -> dict:
         path: str = "/api/v4/spot/order_book"
         query: str = f"?currency_pair={symbol}"
@@ -37,11 +41,13 @@ class GateIo(AbstractBaseExchange):
 
         for bid in resp["bids"]:
             res_depth["bids"].append({
+                "platform": "gate_io",
                 "price": bid[0],
                 "qty": bid[1]
             })
         for ask in resp["asks"]:
             res_depth["asks"].append({
+                "platform": "gate_io",
                 "price": ask[0],
                 "qty": ask[1]
             })

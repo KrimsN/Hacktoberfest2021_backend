@@ -1,6 +1,8 @@
 import requests
 from functools import lru_cache
 
+from cachetools.func import ttl_cache
+
 from app.buisness_logic.base_exchange import AbstractBaseExchange
 
 
@@ -23,6 +25,7 @@ class Coinbase(AbstractBaseExchange):
         return result
 
     @classmethod
+    @ttl_cache(ttl=60 * 5)
     def get_avg_price(cls, symbol: str):
         path: str = f"/products/{symbol}/book?level=1"
         resp = requests.get(f"{cls._api_base}{path}", headers=cls._headers, allow_redirects=True).json()
@@ -33,6 +36,7 @@ class Coinbase(AbstractBaseExchange):
         return res
 
     @classmethod
+    @ttl_cache(ttl=60 * 5)
     def get_depth(cls, symbol: str):
         path: str = f"/products/{symbol}/book?level=2"
         res = requests.get(f"{cls._api_base}{path}", headers=cls._headers, allow_redirects=True).json()
@@ -40,11 +44,13 @@ class Coinbase(AbstractBaseExchange):
         res_depth = {"bids": [], "asks": []}
         for bid in res['bids']:
             res_depth["bids"].append({
+                "platform": "coinbase",
                 "price": bid[0],
                 "qty": bid[1]
             })
         for ask in res["asks"]:
             res_depth["asks"].append({
+                "platform": "coinbase",
                 "price": ask[0],
                 "qty": ask[1]
             })

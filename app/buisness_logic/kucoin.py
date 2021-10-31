@@ -1,5 +1,6 @@
 import requests
 from functools import lru_cache
+from cachetools.func import ttl_cache
 
 from app.buisness_logic.base_exchange import AbstractBaseExchange
 
@@ -17,6 +18,7 @@ class KuCoin(AbstractBaseExchange):
         return result
 
     @classmethod
+    @ttl_cache(ttl=60*5)
     def get_avg_price(cls, symbol: str):
         path: str = "/api/v1/market/stats"
         query: str = f"?symbol={symbol}"
@@ -26,6 +28,7 @@ class KuCoin(AbstractBaseExchange):
         return res
 
     @classmethod
+    @ttl_cache(ttl=60 * 5)
     def get_depth(cls, symbol: str):
         path: str = "/api/v3/market/orderbook/level2"
         query: str = f"?symbol={symbol}"
@@ -34,11 +37,13 @@ class KuCoin(AbstractBaseExchange):
         res_depth = {"bids": [], "asks": []}
         for bid in resp['bids']:
             res_depth["bids"].append({
+                "platform": "kucoin",
                 "price": bid[0],
                 "qty": bid[1]
             })
         for ask in resp["asks"]:
             res_depth["asks"].append({
+                "platform": "kucoin",
                 "price": ask[0],
                 "qty": ask[1]
             })
