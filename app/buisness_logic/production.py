@@ -112,8 +112,9 @@ def calculate_sell(symbol, total_amount):
     sum = {
         'price': decimal.Decimal(0),
         'amount': decimal.Decimal(0),
+        'completed': False,
+        'avgPrice': None,
         "bids": [],
-        'completed': False
     }
 
     for bid in bids:
@@ -144,8 +145,9 @@ def calculate_buy(symbol, total_amount):
     sum = {
         'price': decimal.Decimal(0),
         'amount': decimal.Decimal(0),
-        "bids": [],
-        'completed': False
+        'completed': False,
+        'avgPrice': None,
+        "asks": [],
     }
 
     for ask in asks:
