@@ -161,6 +161,10 @@ def calculate_sell(symbol, total_amount):
             sum[platform] += 1
 
         if sum["amount"] >= total_amount:
+            diff = sum['amount'] - total_amount
+            sum['amount'] -= diff
+            sum['price'] -= diff * price
+            sum['bids'][-1]['qty'] = decimal.Decimal(sum['bids'][-1]['qty']) - diff
             sum['completed'] = True
             break
 
@@ -188,13 +192,18 @@ def calculate_buy(symbol, total_amount):
         platform = ask['platform']
         sum['amount'] += qty
         sum['price'] += price * qty
-        sum["bids"].append(ask)
+        sum["asks"].append(ask)
         if platform not in sum.keys():
             sum[platform] = 1
         else:
             sum[platform] += 1
 
         if sum["amount"] >= total_amount:
+            diff = sum['amount'] - total_amount
+            sum['amount'] -= diff
+            sum['price'] -= diff * price
+            sum['asks'][-1]['qty'] = decimal.Decimal(sum['bids'][-1]['qty']) - diff
+
             sum['completed'] = True
             break
 
