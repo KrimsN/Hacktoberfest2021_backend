@@ -1,4 +1,5 @@
 import decimal
+from loguru import logger
 
 from app.buisness_logic.binance import Binance
 from app.buisness_logic.coinbase import Coinbase
@@ -62,6 +63,9 @@ def aggregate_current_price(symbol: str):
 def aggregate_bids_asks(symbol):
     symbol_aliases = SYMBOL_TABLE[symbol]
 
+    logger.info(f'Aggregate bid/asks by {symbol = }')
+    logger.debug(f"{symbol_aliases = }")
+
     res = {"bids": [], "asks": []}
 
     if symbol_aliases['binance'] is not None:
@@ -69,35 +73,45 @@ def aggregate_bids_asks(symbol):
             binance = Binance.get_depth(symbol_aliases['binance'])
             res['bids'].extend(binance['bids'])
             res['asks'].extend(binance['asks'])
-        except: pass
+        except Exception as e:
+            logger.error("binance error")
+            logger.error(e)
 
     if symbol_aliases['coinbase'] is not None:
         try:
             coinbase = Coinbase.get_depth(symbol_aliases['coinbase'])
             res['bids'].extend(coinbase['bids'])
             res['asks'].extend(coinbase['asks'])
-        except: pass
+        except Exception as e:
+            logger.error("coinbase error")
+            logger.error(e)
 
     if symbol_aliases['dydx'] is not None:
         try:
             dydx = Dydx.get_depth(symbol_aliases['dydx'])
             res['bids'].extend(dydx['bids'])
             res['asks'].extend(dydx['asks'])
-        except: pass
+        except Exception as e:
+            logger.error("dydx error")
+            logger.error(e)
 
     if symbol_aliases['gateio'] is not None:
         try:
             gateio = GateIo.get_depth(symbol_aliases['gateio'])
             res['bids'].extend(gateio['bids'])
             res['asks'].extend(gateio['asks'])
-        except: pass
+        except Exception as e:
+            logger.error("gateio error")
+            logger.error(e)
 
     if symbol_aliases['kucoin'] is not None:
         try:
             kucoin = KuCoin.get_depth(symbol_aliases['kucoin'])
             res['bids'].extend(kucoin['bids'])
             res['asks'].extend(kucoin['asks'])
-        except: pass
+        except Exception as e:
+            logger.error("kucoin error")
+            logger.error(e)
 
     res['bids'].sort(key=lambda x: float(x['price']), reverse=True)
     res['asks'].sort(key=lambda x: float(x['price']))
@@ -105,6 +119,7 @@ def aggregate_bids_asks(symbol):
 
 
 def calculate_sell(symbol, total_amount):
+    logger.info('Calculate to sell')
     total_amount = decimal.Decimal(total_amount)
 
     bids = aggregate_bids_asks(symbol)['bids']
@@ -138,6 +153,7 @@ def calculate_sell(symbol, total_amount):
 
 
 def calculate_buy(symbol, total_amount):
+    logger.info('Calculate to buy')
     total_amount = decimal.Decimal(total_amount)
 
     asks = aggregate_bids_asks(symbol)['asks']

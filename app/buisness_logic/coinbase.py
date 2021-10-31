@@ -2,6 +2,7 @@ import requests
 from functools import lru_cache
 
 from cachetools.func import ttl_cache
+from loguru import logger
 
 from app.buisness_logic.base_exchange import AbstractBaseExchange
 
@@ -20,6 +21,7 @@ class Coinbase(AbstractBaseExchange):
     @classmethod
     @lru_cache
     def get_all_trade_pairs_ids(cls):
+        logger.info(f"<Coinbase>. get_all_trade_pairs_ids ")
         resp = cls.get_all_trade_pairs()
         result = sorted([i['id'] for i in resp])
         return result
@@ -27,6 +29,7 @@ class Coinbase(AbstractBaseExchange):
     @classmethod
     @ttl_cache(ttl=60 * 5)
     def get_avg_price(cls, symbol: str):
+        logger.info(f"<Coinbase>. get_avg_price({symbol = }) ")
         path: str = f"/products/{symbol}/book?level=1"
         resp = requests.get(f"{cls._api_base}{path}", headers=cls._headers, allow_redirects=True).json()
         res = {
@@ -38,6 +41,7 @@ class Coinbase(AbstractBaseExchange):
     @classmethod
     @ttl_cache(ttl=60 * 5)
     def get_depth(cls, symbol: str):
+        logger.info(f"<Coinbase>. get_depth({symbol = }) ")
         path: str = f"/products/{symbol}/book?level=2"
         res = requests.get(f"{cls._api_base}{path}", headers=cls._headers, allow_redirects=True).json()
 
