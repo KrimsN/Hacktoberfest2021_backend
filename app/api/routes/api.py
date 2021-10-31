@@ -2,12 +2,12 @@ from fastapi import APIRouter
 
 from app.api.routes import (
     default,
+    production,
     binance,
     coinbase,
     kucoin,
     gate_io,
     dydx,
-    production,
     ftx
 )
 
