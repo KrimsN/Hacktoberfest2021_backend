@@ -8,6 +8,7 @@ from app.api.routes import (
     gate_io,
     dydx,
     production,
+    ftx
 )
 
 
@@ -20,4 +21,5 @@ api_router.include_router(coinbase.router, tags=["Coinbase"], prefix='/coinbase'
 api_router.include_router(kucoin.router, tags=["KuCoin"], prefix='/kucoin')
 api_router.include_router(gate_io.router, tags=["Gate.io"], prefix='/gate_io')
 api_router.include_router(dydx.router, tags=["dYdX"], prefix='/dydx')
+api_router.include_router(ftx.router, tags=["Ftx"], prefix='/ftx')
 
