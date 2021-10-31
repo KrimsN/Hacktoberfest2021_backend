@@ -1,5 +1,6 @@
 import decimal
 from loguru import logger
+from functools import lru_cache
 
 from app.buisness_logic.binance import Binance
 from app.buisness_logic.coinbase import Coinbase
@@ -12,10 +13,12 @@ from app.buisness_logic.kucoin import KuCoin
 from app.core.config import SYMBOL_TABLE
 
 
+@lru_cache
 def accessable_symbols():
     return sorted(list(SYMBOL_TABLE.keys()))
 
 
+@lru_cache
 def info_about_accessable_symbols():
     return SYMBOL_TABLE.copy()
 
@@ -193,6 +196,7 @@ def calculate_buy(symbol, total_amount):
         sum['amount'] += qty
         sum['price'] += price * qty
         sum["asks"].append(ask)
+
         if platform not in sum.keys():
             sum[platform] = 1
         else:
@@ -209,5 +213,4 @@ def calculate_buy(symbol, total_amount):
 
     sum['avgPrice'] = sum['price'] / sum['amount']
     return sum
-
 
